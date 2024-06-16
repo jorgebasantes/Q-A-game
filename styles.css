@@ -1,0 +1,81 @@
+/* styles.css */
+section{
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-image: url(backimage.png);
+}
+h1{
+    text-align: center;
+   text-transform: uppercase;
+   margin-top: 300px;
+   font-size: 30px;
+   word-spacing: 15px;
+}
+#question-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+#level{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+#question{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+input{
+    
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid black;
+    font-size: 25px;
+    margin: 15px;
+    padding: 10px; 
+}
+#answer{
+    padding-left: 50p;
+    color: rgba(239, 243, 10, 0.87);
+}
+#message{
+    text-align: center;
+}
+
+#answer::placeholder {
+    color: black; /* Change this to any color you like */
+    opacity: 1; /* This ensures the placeholder text is fully opaque */
+    background-color: yellow
+}
+button{
+    padding: 20px;
+    margin: 50px 15px;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    border: 3px solid rgb(8, 8, 8);
+    font-size: 30px;
+    cursor: pointer; 
+    
+}
+#animation-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: rgb(6, 59, 6);
+    animation: fade 2s ease-in-out;
+    background-color: aliceblue;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
